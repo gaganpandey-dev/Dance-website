@@ -1,0 +1,27 @@
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(rel="stylesheet", href="/static/style.css")
+    block styles
+    block scripts
+  body
+    header
+      nav#navbar.top
+        ul
+          li
+            img(src="/static/image.png", alt="Dance World Logo")
+            span Dance World
+          li: a(href="/") Home
+          li: a(href="/about") About
+          li: a(href="/services") Services
+          li: a(href="/classinfo") Class Info
+          li: a(href="/contact") Contact Us
+
+    block content
+
+    footer#footer
+      p This is footer and copyright 2024 &copy; All rights reserved.

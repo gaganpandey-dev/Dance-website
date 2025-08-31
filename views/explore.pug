@@ -1,0 +1,66 @@
+//- explore.pug
+extends base.pug
+
+block styles
+  link(rel="stylesheet", href="/static/explore.css")
+  link(rel="stylesheet", href="/static/explorenode.css")
+  style.
+    .explore-container { animation: slideInPage 0.8s ease-out forwards; padding-top: 100px; }
+    @keyframes slideInPage { 
+      from { opacity: 0; transform: translateX(100vw); } 
+      to { opacity: 1; transform: translateX(0); } 
+    }
+
+block content
+  .explore-container
+    h1.heading Explore More Styles & Stories
+
+    section.intro-section
+      p.intro-text
+        | Welcome to the heart of our academy—where movement becomes meaning, and every rhythm tells a story.
+        | Whether you're a beginner or a seasoned performer, we shape confidence, creativity, and stage presence.
+
+    section.styles-showcase
+      h2.heading Featured Dance Styles
+      .card-wrapper
+        .card
+          .icon 💃
+          h3.card-title Contemporary Flow
+          p.card-description Express emotion with fluid techniques, floor work, and cinematic choreography.
+          a.card-link(href="/contemporary") Dive In &rarr;
+
+        .card
+          .icon 🕺
+          h3.card-title Hip-Hop Groove Lab
+          p.card-description High-energy combos, musicality drills, and freestyle sessions that light up the floor.
+          a.card-link(href="/hiphop") Feel the Beat &rarr;
+
+        .card
+          .icon 👯‍♀️
+          h3.card-title Kids Dance Camp
+          p.card-description Playful foundations that build rhythm, coordination, and confidence for young movers.
+          a.card-link(href="/kids") Join the Fun &rarr;
+
+    section.timeline-section
+      h2.heading Your Journey With Us
+      ul.card-highlights
+        li Step 1: Choose your style
+        li Step 2: Meet your instructor
+        li Step 3: Join your first class
+        li Step 4: Perform on stage
+
+    section.testimonials
+      h2.heading What Our Dancers Say
+      .card
+        .icon 🎤
+        h3.card-title Aanya Verma
+        p.card-description "From my first plié to my first performance, I found community and courage here."
+      .card
+        .icon 🎧
+        h3.card-title Raghav Singh
+        p.card-description "Choreography that challenges you, mentors who believe in you—the energy is unreal."
+
+    section.cta-final
+      h3 Ready to begin your journey?
+      p Explore our full schedule, meet your mentors, and take your first step into the spotlight.
+      a.button(href="/contact") Contact Us &rarr;

@@ -1,0 +1,15 @@
+.explore-container {
+  animation: slideInPage 0.8s ease-out forwards;
+  padding-top: 100px; /* to avoid navbar overlap */
+}
+
+@keyframes slideInPage {
+  from {
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Form container */
+.myform {
+    width: 50%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+/* Glow & scale effect on hover */
+.myform:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6), 0 0 50px rgba(0, 255, 255, 0.3);
+}
+
+/* Inputs and textarea */
+.myform input,
+.myform textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Glow on focus */
+.myform input:focus,
+.myform textarea:focus {
+    border-color: cyan;
+    box-shadow: 0 0 12px cyan;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Submit button */
+.myform button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, cyan, dodgerblue);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+.myform button:hover {
+    background: linear-gradient(90deg, dodgerblue, cyan);
+    box-shadow: 0 0 15px cyan, 0 0 30px dodgerblue;
+}
+
+/* Submit throw effect */
+.myform button:active {
+    animation: pulse 0.5s ease;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px cyan;
+    }
+    50% {
+        transform: scale(0.95);
+        box-shadow: 0 0 30px cyan, 0 0 50px dodgerblue;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px cyan;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9rem;
+}

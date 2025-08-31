@@ -1,0 +1,42 @@
+extends base.pug
+
+block styles
+  link(rel="stylesheet", href="/static/classinfo.css")
+
+block content
+  .container
+    h1.heading Our Dance Programs
+
+    p.intro-text
+      | Step into rhythm, grace, and passion. Our dance classes are crafted to elevate your movement, ignite your creativity, and build confidence on and off the stage.
+
+    .card-wrapper
+      .card
+        .icon ★
+        h2.card-title Ballet Foundations
+        p.card-description Discover the elegance of classical ballet through posture, poise, and expressive technique.
+        ul.card-highlights
+          li Beginner to intermediate levels
+          li Focus on form and fluidity
+          li Live recital opportunities
+        a.card-link(href="/ballet") Learn More
+
+      .card
+        .icon ★
+        h2.card-title Hip-Hop Groove Lab
+        p.card-description Dive into the beats with high-energy choreography and freestyle expression.
+        ul.card-highlights
+          li Urban styles & freestyle
+          li Rhythm drills & combos
+          li Performance battles
+        a.card-link(href="/hiphop") Learn More
+
+    .quote-section
+      blockquote.quote
+        | "Dance is the hidden language of the soul." – Martha Graham
+
+    .cta-section
+      h3 Ready to move with us?
+      p Explore more styles, meet our instructors, and find the rhythm that moves you.
+      a.button(href='/explore') Explore More →
+

@@ -1,0 +1,15 @@
+extends base.pug
+
+block styles
+  link(rel="stylesheet", href="/static/services.css")
+
+block content
+  section.services-section
+    h2.services-title Our Services
+
+    .services-grid
+      each service in ['Ballet Classes', 'Hip-Hop Training', 'Contemporary Dance', 'Kids Dance Camps', 'Private Coaching', 'Performance Prep']
+        .service-card
+          .icon ★
+          h3= service
+          p Learn the art of #{service.toLowerCase()} with expert instructors and immersive sessions.

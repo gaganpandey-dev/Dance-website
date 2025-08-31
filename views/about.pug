@@ -1,0 +1,42 @@
+extends base.pug
+
+block styles
+  link(rel="stylesheet", href="/static/about.css")
+
+block content
+  .about-container
+    section.about-hero
+      // Snow-fall style letter-by-letter title
+      h2.about-title
+        span A
+        span b
+        span o
+        span u
+        span t
+        span &nbsp;
+        span U
+        span s
+
+      // Blue glow entrance, then settle to reddish-black
+      p.welcome-line Welcome to Dance World! We are passionate about dance and dedicated to providing top-notch dance education and experiences.
+
+    section.about-main
+      // Morphing box with shadow color juggling
+      .about-box
+        h3 About Dance World
+
+      .about-image
+        img(src="/static/p2.png", alt="About Dance World")
+
+      .about-text
+        p At Dance World, we believe that dance is not just an art form but a way of life. Our mission is to inspire creativity, build confidence, and foster a love for dance in every individual.
+        p We offer a variety of dance styles and classes to suit all ages and skill levels. Come dance with us and experience the joy of movement!
+        p Our state-of-the-art facilities and supportive environment ensure that you have the best experience possible.
+        p Whether you're looking to improve your technique, prepare for a performance, or simply have fun, Dance World is the place to be.
+
+    section.about-cta
+      // Ad-like blinking title inside a box whose shadow slides and changes color
+      .cta-box
+        h3.cta-title Join Us
+        p Join us at Dance World and let your dance journey begin!
+        a.btn.cta-btn(href="/contact") Get in Touch

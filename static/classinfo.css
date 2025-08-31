@@ -1,0 +1,167 @@
+/* Heading with gradient and slide-in animation */
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: slideFade 1.2s ease-out forwards;
+}
+
+.container {
+  padding-top: 100px;
+  animation: fadeInContainer 1s ease forwards;
+}
+
+@keyframes fadeInContainer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Intro paragraph styling */
+.intro-text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+/* Card layout and animation */
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: #4d4c87;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(105, 108, 137, 0.1);
+  padding: 1.5rem;
+  width: 300px;
+  animation: fadeInCard 0.8s ease forwards;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(52, 37, 37, 0.2);
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Icon styling */
+.icon {
+  font-size: 1.5rem;
+  color: #7d8fcb;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+/* Card content styling */
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ff6a00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-link {
+  color: #ee0979;
+}
+
+/* Highlights list */
+.card-highlights {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Quote section */
+.quote-section {
+  margin: 3rem auto;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  animation: fadeInQuote 1.5s ease forwards;
+}
+
+@keyframes fadeInQuote {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CTA button */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
+  color: #6a8d9f;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+

@@ -1,0 +1,14 @@
+
+extends base.pug
+
+block styles
+  link(rel="stylesheet", href="/static/contact.css")
+
+block content
+  h2 Contact Us
+  p Fill the form below to reach us!
+  form.myform(action="/contact", method="POST")
+    input(type="text", name="name", placeholder="Your Name")
+    input(type="email", name="email", placeholder="Your Email")
+    textarea(name="message", placeholder="Message")
+    button(type="submit") Send

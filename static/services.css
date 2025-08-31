@@ -1,0 +1,86 @@
+/* Services Section */
+.services-section {
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #fffaf0, #f0f8ff);
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.services-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #ff7b54, #ffb26b, #ffd56f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulseTitle 2s infinite;
+}
+
+@keyframes pulseTitle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 0 10px;
+}
+
+.service-card {
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: cardPop 0.8s ease forwards;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+.service-card .icon {
+  font-size: 2rem;
+  color: #ff7b54;
+  margin-bottom: 12px;
+  animation: iconSpin 3s linear infinite;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #34495e;
+  opacity: 0.85;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes iconSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes cardPop {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
